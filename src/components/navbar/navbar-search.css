@@ -1,7 +1,10 @@
 .navbar .search-box{
   margin-right:auto;
   display: flex;
-  flex-grow: 1;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .navbar .search-button{
@@ -26,7 +29,6 @@
   outline:none;
   border-bottom:1px solid white;
 }
-
 
 .navbar .search-input:focus{
   border-bottom:1px solid red;

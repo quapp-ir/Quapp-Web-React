@@ -1,0 +1,43 @@
+:local(.post_overview){
+  display: flex;
+  background-color: #f7f7f7;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 100%;
+}
+
+:local(.image){
+  height: 30vw;
+}
+
+:local(.header){
+  padding-left: 20px 
+}
+
+:local(.header h1){
+  color: blue;
+}
+
+:local(.text){
+  padding: 20px;
+}
+
+:local(.detail){
+  padding-left: 20px;
+}
+
+:local(.read_more){
+  align-self: flex-end;
+  margin-right: 50px;
+  width: 140px;
+  height: 50px;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+  background-color:  black;
+  color: white;
+}
