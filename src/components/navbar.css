@@ -1,0 +1,70 @@
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  background-color: #333;
+  font-size: 170%;
+  align-items: stretch;
+}
+
+.navbar li{
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar .nav-item:hover{
+  cursor: pointer;
+  animation-name: nav-bar-item-hover;
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+}
+@keyframes nav-bar-item-hover {
+  from {}
+  to {color: #333;background-color: white;}
+}
+
+.navbar .login:hover{
+  cursor: pointer;
+  animation-name: nav-bar-login-hover;
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+}
+@keyframes nav-bar-login-hover {
+  from {}
+  to {color: white;background-color: #2a8d39;}
+}
+
+.navbar .signup:hover{
+  cursor: pointer;
+  animation-name: nav-bar-signup-hover;
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+}
+@keyframes nav-bar-signup-hover {
+  from {}
+  to {color: white;background-color: #3d4e85;}
+}
+
+.navbar .active{
+  color: rgba(119, 117, 117, 0.493);
+}
+
+.navbar .active:hover{
+  color: rgba(119, 117, 117, 0.493);
+  cursor: pointer;
+  animation-name: none;
+}
+
+.menu-icon{
+  display: none;
+}
+
+@media all and (max-width: 1000px){
+  .navbar{
+    
+  }
+}
