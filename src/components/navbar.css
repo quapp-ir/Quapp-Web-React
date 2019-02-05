@@ -64,7 +64,7 @@
 }
 
 @media all and (max-width: 1000px){
-  .navbar{
-    
+  .navbar .menu-icon{
+    display: block;
   }
 }
