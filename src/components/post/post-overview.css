@@ -7,14 +7,14 @@
 }
 
 :local(.image){
-  height: 30vw;
+  height: 20vw;
 }
 
-:local(.header){
+:local(.title){
   padding-left: 20px 
 }
 
-:local(.header h1){
+:local(.title h1){
   color: blue;
 }
 

@@ -1,15 +1,13 @@
 import React from 'react';
 
-
-
 import style from './post-overview.css';
 
 const PostOverview = (props)=>{
     return (
       <div className={style.post_overview}>
-        <img src={props.image} className={style.image}></img>
+        <img src={props.image} className={style.image} alt="loading ..."></img>
         
-        <div className={style.header}>
+        <div className={style.title}>
           <h1>{props.title}</h1>
         </div>
         <div className={style.detail}>

@@ -12,7 +12,6 @@ class NavbarSearch extends React.Component{
     }
   }
   render(){
-    console.log(this.props.optSyle);
     return (
       <div className={this.props.optStyle?this.props.optStyle + ' search-box':' search-box'}>
         <input type='text' value={this.state.searchInputValue} onChange={(e)=>this.setState({searchInputValue:e.target.value})} className='search-input' placeholder='search'/>

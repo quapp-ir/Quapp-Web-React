@@ -1,0 +1,27 @@
+:local(.post_full){
+  display: flex;
+  background-color: #f7f7f7;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 100%;
+}
+
+:local(.image){
+  /* height: 0vw; */
+}
+
+:local(.header){
+  padding-left: 20px 
+}
+
+:local(.header h1){
+  color: blue;
+}
+
+:local(.text){
+  padding: 20px;
+}
+
+:local(.footer){
+  padding-left: 20px;
+}
