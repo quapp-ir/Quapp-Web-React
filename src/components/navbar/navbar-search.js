@@ -1,7 +1,9 @@
 import React from 'react';
 
-import './navbar-search.css'
+// import './navbar-search.css'
 import SearchIconSVG from '../../svg/search-icon-svg.js';
+
+import style from './navbar-search.css';
 
 class NavbarSearch extends React.Component{
   constructor(props){
@@ -13,10 +15,10 @@ class NavbarSearch extends React.Component{
   }
   render(){
     return (
-      <div className={this.props.optStyle?this.props.optStyle + ' search-box':' search-box'}>
-        <input type='text' value={this.state.searchInputValue} onChange={(e)=>this.setState({searchInputValue:e.target.value})} className='search-input' placeholder='search'/>
-        <button className="search-button" >
-          <SearchIconSVG width='50px' height='50px'></SearchIconSVG>
+      <div className={style.search_box}>
+        <input type='text' value={this.state.searchInputValue} onChange={(e)=>this.setState({searchInputValue:e.target.value})} className={style.search_input} placeholder='search'/>
+        <button className={style.search_button} >
+          <SearchIconSVG ></SearchIconSVG>
         </button>
       </div>
     );

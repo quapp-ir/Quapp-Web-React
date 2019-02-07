@@ -54,6 +54,22 @@ const Home = (props)=>{
           image={posts[0].image}
           title={posts[0].title}
         />
+         <PostFull 
+          id={posts[0].id}
+          creator={posts[0].creator}
+          createdAt={posts[0].createdAt}
+          text={posts[0].summary}
+          image={posts[0].image}
+          title={posts[0].title}
+        />
+         <PostFull 
+          id={posts[0].id}
+          creator={posts[0].creator}
+          createdAt={posts[0].createdAt}
+          text={posts[0].summary}
+          image={posts[0].image}
+          title={posts[0].title}
+        />
       </div>
     </div>
   );

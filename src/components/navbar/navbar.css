@@ -1,62 +1,111 @@
-.navbar{
+:local(.navbar){
   list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.84);
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  font-size: 120%;
+  color: white;
+  
+  position: fixed;
+  left: 0;
+  right:0;
+  top:20px;
+  z-index: 1;
+
   display: flex;
-  justify-content: left;
-  background-color: #333;
-  font-size: 170%;
+  justify-content: space-around;
   align-items: stretch;
 }
 
-.navbar li{
-  color: white;
-  padding: 20px;
+:local(.center_right_group){
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-right: auto;
+}
+
+:local(.center_right_group_item){
   text-decoration: none;
   text-align: center;
+  padding: 20px;
 }
 
-.navbar .nav-hover:hover{
+:local(.center_right_group_item:hover){
   cursor: pointer;
-  animation-name: nav-bar-item-hover;
+  animation-name: center_right_group_item;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+}
+:local(@keyframes center_right_group_item){
+  form {}
+  to {color: #53e769;}
+}
+
+:local(.center_right_group_active){
+  color: #c1f0c9;
+}
+
+:local(.login:hover){
+  cursor: pointer;
+  animation-name: login-hover;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+:local(@keyframes login-hover) {
+  from {}
+  to {color: rgb(188, 188, 223)}
+}
+
+:local(.left_group){
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-right: auto;
+}
+
+:local(.left_group_item){
+  text-decoration: none;
+  text-align: center;
+
+  margin-left:auto;
+  padding: 20px;
+}
+
+:local(.signup:hover){
+  cursor: pointer;
+  animation-name: signup-hover;
   animation-duration: .25s;
   animation-fill-mode: forwards;
 }
-@keyframes nav-bar-item-hover {
+:local(@keyframes signup-hover ){
   from {}
-  to {color: #333;background-color: white;}
+  to {color: rgb(245, 189, 189);}
 }
 
-.navbar .login:hover{
+:local(.center_left_group){
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+:local(.icon){
+  font-size: 200%;
+  color:white;
+  /* background-color: white */
+}
+
+:local(.icon:hover){
   cursor: pointer;
-  animation-name: nav-bar-login-hover;
-  animation-duration: .25s;
-  animation-fill-mode: forwards;
-}
-@keyframes nav-bar-login-hover {
-  from {}
-  to {color: white;background-color: #2a8d39;}
 }
 
-.navbar .signup:hover{
-  cursor: pointer;
-  animation-name: nav-bar-signup-hover;
-  animation-duration: .25s;
-  animation-fill-mode: forwards;
-}
-@keyframes nav-bar-signup-hover {
-  from {}
-  to {color: white;background-color: #3d4e85;}
-}
-
-.navbar .active{
-  color: rgba(119, 117, 117, 0.493);
-}
-
-.navbar .active:hover{
-  color: rgba(119, 117, 117, 0.493);
-  cursor: pointer;
-  animation-name: none;
+:local(.right_group){
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  /* margin-right: auto; */
+  margin-left: auto;
 }
 
 .menu-icon{
