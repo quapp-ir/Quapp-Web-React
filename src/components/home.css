@@ -1,0 +1,10 @@
+:local(.top_image){
+  width: 100%;
+  height: 200px;
+}
+
+@media all and (max-width: 1200px){
+  :local(.top_image){
+    display: none;
+  }
+}

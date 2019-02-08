@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './navbar/navbar';
-import PostOverviewList from './post/post-overview-list';
-import PostFull from './post/post-full';
+import Footer from './footer/footer';
 
 import im from '../images/web-development.jpg';
+import im2 from '../images/algorithm.png';
+
+import style from './home.css';
 
 const Home = (props)=>{
   var today = new Date();
@@ -40,37 +42,10 @@ const Home = (props)=>{
     }
   ]
   return (
-    <div className='home'>
+    <div className='home' style={{height:"2000px"}}>
+      <img src={im2} alt="loding" className={style.top_image}></img>
       <Navbar />
-      <div style={{position:"absolute",left:'25vw',width:"50vw"}}>
-        {/* <PostOverviewList 
-          posts={posts}
-        /> */}
-        <PostFull 
-          id={posts[0].id}
-          creator={posts[0].creator}
-          createdAt={posts[0].createdAt}
-          text={posts[0].summary}
-          image={posts[0].image}
-          title={posts[0].title}
-        />
-         <PostFull 
-          id={posts[0].id}
-          creator={posts[0].creator}
-          createdAt={posts[0].createdAt}
-          text={posts[0].summary}
-          image={posts[0].image}
-          title={posts[0].title}
-        />
-         <PostFull 
-          id={posts[0].id}
-          creator={posts[0].creator}
-          createdAt={posts[0].createdAt}
-          text={posts[0].summary}
-          image={posts[0].image}
-          title={posts[0].title}
-        />
-      </div>
+      <Footer></Footer>
     </div>
   );
 }

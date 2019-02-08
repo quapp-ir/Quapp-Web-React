@@ -3,7 +3,7 @@ import React from 'react';
 const ListNavSVG = (props)=>{
   return (
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 width={props.width?props.width:'24px'} height={props.height?props.height:'24px'} viewBox="0 0 612 612"  xml="preserve">
+	  viewBox="0 0 612 612"  xml="preserve">
 <g>
 	<g id="_x33__32_">
 		<g>

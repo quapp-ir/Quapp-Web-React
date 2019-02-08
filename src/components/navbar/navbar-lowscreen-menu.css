@@ -1,0 +1,104 @@
+:local(.container){
+  left:0;
+  right:0;
+  width: 100%;
+  color:white;
+  /* overflow-y:scroll; */
+  animation-name: fade_in;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+:local(@keyframes fade_in){  
+  from {opacity: 0;transform: translateY(-300px)}
+  to {opacity: 1;transform: translateY(0)}
+}
+
+:local(.menu){
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0 ,.7);
+  padding: 30px;
+}
+:local(.down_triangle){
+  width: 0;
+  height: 0;
+  border-left:50vw solid transparent;
+  border-right:50vw solid transparent;
+  border-top:50px solid rgb(0,0,0,0.7);
+}
+
+:local(.flex_row){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+:local(.col){
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+:local(.item:hover){
+  cursor: pointer;
+  animation-name: item_hover;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+}
+:local(@keyframes item_hover){
+  form {}
+  to {color: #6aeb7d;}
+}
+
+:local(.active){
+  color: #c1f0c9;
+}
+
+:local(.login:hover){
+  cursor: pointer;
+  animation-name: login-hover;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+:local(@keyframes login-hover) {
+  from {}
+  to {color: rgb(188, 188, 223)}
+}
+
+:local(.signup:hover){
+  cursor: pointer;
+  animation-name: signup-hover;
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+}
+:local(@keyframes signup-hover ){
+  from {}
+  to {color: rgb(245, 189, 189);}
+}
+
+
+.dropdown-content {
+}
+
+.dropdown-content-item{
+  text-decoration: none;
+  text-align: center;
+  
+}
+.dropdown-content-item:hover{
+  cursor: pointer;
+  animation-name: nav-bar-item-hover;
+  animation-duration: .25s;
+  animation-fill-mode: forwards;
+}
+@keyframes nav-bar-item-hover {
+  from {}
+  to {color: #333;background-color: white;}
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

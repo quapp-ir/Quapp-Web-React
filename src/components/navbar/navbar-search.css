@@ -3,6 +3,7 @@
   display: flex;
   text-decoration: none;
   text-align: center;
+  color:white;
 }
 
 :local(.search_button){
@@ -20,13 +21,13 @@
 }
 
 :local(.search_button svg){
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   fill: white
 }
 
 :local(.search_button svg:hover){
-  fill: violet
+  fill: rgb(248, 228, 174)
 }
 
 
@@ -34,10 +35,12 @@
   background-color: inherit;
   border:0;
   text-decoration: none;
+  width: 70%;
+  color: white;
   outline:none;
   border-bottom:1px solid white;
 }
 
 :local(.search_input:focus){
-  border-bottom:1px solid rgb(208, 252, 208);
+  border-bottom:1px solid rgb(248, 228, 174);
 }
