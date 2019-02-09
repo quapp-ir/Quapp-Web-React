@@ -12,13 +12,13 @@ const PostFull = (props)=>{
       <br></br>
       <br></br>
       <br></br>
-      <img src={props.image} className={style.image} alt="loading..."/>
+      <img src={props.post.image} className={style.image} alt="loading..."/>
       <br></br>
       <div className={style.text}>
-      	<p>{props.text}</p>
+      	<p>{props.post.text}</p>
       </div>
       <div className={style.footer}>
-      	<div><small>created by <small>{props.creator}</small> at<small> {props.createdAt}</small></small></div>
+      	<div><small>created by <small>{props.post.creator}</small> at<small> {props.post.createdAt}</small></small></div>
       </div>
     </div>
   );

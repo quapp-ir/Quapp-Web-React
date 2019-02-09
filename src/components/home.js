@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar/navbar';
 import Footer from './footer/footer';
+import PostFull from './post/post-full';
 
 import im from '../images/web-development.jpg';
 import im2 from '../images/algorithm.png';
@@ -29,6 +30,7 @@ const Home = (props)=>{
       creator:"arash amigh",
       createdAt:today,
       summary:"CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:",
+      text:"CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:",
       image:im,
       title:"How to master react",
     },
@@ -37,15 +39,22 @@ const Home = (props)=>{
       creator:"arash amigh",
       createdAt:today,
       summary:"CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:",
+      text:"CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:CSS3 introduces new units that are measured relative to the viewport, which is the window in this case. These are vh and vw, which measure viewport height and width, respectively. Here is a simple CSS only solution:",
       image:im,
       title:"How to master react",
     }
   ]
   return (
-    <div className='home' style={{height:"2000px"}}>
+    <div className='home'>
       <img src={im2} alt="loding" className={style.top_image}></img>
       <Navbar />
-      <Footer></Footer>
+      <PostFull 
+        post={posts[0]}
+      />
+      <PostFull 
+        post={posts[0]}
+      />
+      <Footer />
     </div>
   );
 }

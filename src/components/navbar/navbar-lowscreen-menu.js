@@ -21,7 +21,7 @@ const NavbarLowscreenMenu =(props)=>{
               <div className={style.item}>courses</div>              
             </div>
             <div className={style.col}>
-              <div className={style.login}>sign in</div>
+              <div className={style.login}>login</div>
               <div className={style.signup}>register</div>
             </div>
           </div>
